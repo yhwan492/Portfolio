@@ -3,9 +3,8 @@ import './contact.css'
 
 const Contact = () => {
   return (
-    <>
-        
-        <div className='contact'>
+    <>    
+        <section id='contact'>
             <div>Contact</div>
             <div className="flex items-center">
                 <a className='inline-flex'>+1 979-739-8702</a>
@@ -14,7 +13,7 @@ const Contact = () => {
                  <a className='inline-flex' href='https://github.com/yhwan492/'>{/*<img src="https://img.icons8.com/ios-glyphs/30/null/github.png"/>*/}Link to Github</a> 
                  <a className='inline-flex' href='https://www.linkedin.com/in/kyhwan492/'>{/*<img src="https://img.icons8.com/ios-glyphs/30/null/linkedin.png" />*/}Link to LinkedIn</a>
             </div>
-        </div>
+        </section>
     </>
     
   )

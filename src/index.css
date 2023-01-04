@@ -8,6 +8,7 @@
   box-sizing: border-box;
   list-style: none;
   text-decoration: none;
+  scroll-behavior: smooth !important;
 }
 
 :root {
@@ -23,7 +24,20 @@
   --container-width-sm: 90%;
 }
 
+@keyframes smoothscroll1 {
+  from, to { scroll-behavior: smooth; }
+}
+
+@keyframes smoothscroll2 {
+  from, to { scroll-behavior: smooth; }
+}
+
 html {
+  animation: smoothscroll1 1s;
+}
+
+html:focus-within {
+  animation-name: smoothscroll2;
   scroll-behavior: smooth;
 }
 
@@ -75,6 +89,7 @@ h1, h2, h3, h4, h5 {
 
 section {
   margin-top: 8rem;
+  height: 100vh;
 }
 
 section > h2, section > h5 {
